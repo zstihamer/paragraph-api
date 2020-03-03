@@ -1,10 +1,7 @@
 package com.github.tzsendej.paginator;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,9 +15,10 @@ public class ParagraphService {
     private final int total = 500;
 
 
-    @GetMapping("/paragraph")
+    @GetMapping("/paragraphs")
     @ResponseBody
-    public DataResult greeting(@RequestParam(value = "_t", required = false) Integer take, @RequestParam(value = "_s", required = false) Integer skip) {
+    @CrossOrigin(origins = "http://localhost:4200")
+    public DataResult getParagraphs(@RequestParam(value = "_t", required = false) Integer take, @RequestParam(value = "_s", required = false) Integer skip) {
         List<String> data = new ArrayList<>();
         if (skip == null) {
             skip = 0;
