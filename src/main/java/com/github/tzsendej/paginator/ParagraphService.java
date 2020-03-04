@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public class ParagraphService {
     private static final String template = "<p>Paragraph %s! lorem ipsum</p>";
     private final AtomicLong counter = new AtomicLong();
-    private final int total = 500;
+    private final int total = 1000;
 
 
     @GetMapping("/paragraphs")
