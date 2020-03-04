@@ -26,8 +26,8 @@ public class ParagraphService {
         if (take == null) {
             take = 30;
         }
-        for (int i = skip; i <= (skip + take -1); i++) {
-            data.add(String.format(template, i +1));
+        for (int i = skip; i <= (skip + take - 1); i++) {
+            data.add(String.format(template, i + 1));
         }
         return new DataResult(this.total, data);
     }
