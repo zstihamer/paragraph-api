@@ -1,5 +1,5 @@
 # docu-paginator
-A document paginator JAVA REST API for an angular virtual scrolling demo project
+A document paginator JAVA REST API for an angular virtual scrolling demo project: https://github.com/zstihamer/ag-inifitie-reader
 
 ## Set CORS 
 Set CORS at ParagraphService.java 
