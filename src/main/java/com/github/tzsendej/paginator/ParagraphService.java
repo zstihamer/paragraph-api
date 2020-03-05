@@ -1,6 +1,5 @@
 package com.github.tzsendej.paginator;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -8,9 +7,8 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
-@Slf4j
 public class ParagraphService {
-    private static final String template = "<p>Paragraph %s! lorem ipsum</p>";
+    private static final String template = "<div><p>Paragraph %s! lorem ipsum</p></div>";
     private final AtomicLong counter = new AtomicLong();
     private final int total = 1000;
 
