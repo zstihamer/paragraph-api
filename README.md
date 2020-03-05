@@ -1,5 +1,6 @@
 # Rest Api for Angular app
-A document paginator JAVA REST API for an angular virtual scrolling demo project: https://github.com/zstihamer/angular-virt-scroll
+
+A Spring Boot REST API for an angular virtual scrolling demo project: https://github.com/zstihamer/angular-virt-scroll
 
 ## Set CORS 
 Set CORS at ParagraphService.java 
